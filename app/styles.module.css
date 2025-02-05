@@ -1,0 +1,38 @@
+.fullView {
+  height: 100vh;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.eightball {
+  background-color: #262626;
+  height: 400px;
+  width: 400px;
+  border-radius: 50%;
+}
+
+.eightBallWindow {
+  background-color: #1a1a1a;
+  height: 150px;
+  width: 150px;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+.answer {
+  color: #f2f2f2;
+  width: 150px;
+  height: 150px;
+  padding: 20px;
+  text-align: center;
+}
