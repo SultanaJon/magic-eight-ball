@@ -18,15 +18,16 @@
   background-color: #262626;
   height: 400px;
   width: 400px;
-  border-radius: 50%;
 }
 
 .eightBallWindow {
   background-color: #1a1a1a;
   height: 150px;
   width: 150px;
+}
+
+.circle {
   border-radius: 50%;
-  display: inline-block;
 }
 
 .answer {

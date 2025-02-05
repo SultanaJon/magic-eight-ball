@@ -32,8 +32,10 @@ export default function Home() {
   return (
     <div className={classNames(styles.center, styles.fullView)}>
       <div className={styles.content}>
-        <div className={classNames(styles.eightball, styles.center)}>
-          <div className={styles.eightBallWindow}>
+        <div
+          className={classNames(styles.eightball, styles.circle, styles.center)}
+        >
+          <div className={classNames(styles.eightBallWindow, styles.circle)}>
             <span className={classNames(styles.answer, styles.center)}>
               {answer}
             </span>
