@@ -1,10 +1,10 @@
-'use client';
-import { Button } from '@/components/ui/button';
-import { Input } from '@/components/ui/input';
-import classNames from 'classnames';
-import styles from './styles.module.css';
-import { useState } from 'react';
-import { data } from './answers';
+"use client";
+import { Button } from "@/components/ui/button";
+import { Input } from "@/components/ui/input";
+import classNames from "classnames";
+import styles from "./styles.module.css";
+import { useState } from "react";
+import { data } from "./answers";
 
 export default function Home() {
   const [question, setQuestion] = useState<string>(``);
@@ -44,7 +44,7 @@ export default function Home() {
           placeholder="Ask the eight ball a question"
         />
         <Button onClick={onClickHandler} disabled={question == `` || isLoading}>
-          {isLoading ? 'Asking eight ball...' : 'Ask the eight ball'}
+          {isLoading ? "Asking eight ball..." : "Ask the eight ball"}
         </Button>
       </div>
     </div>
