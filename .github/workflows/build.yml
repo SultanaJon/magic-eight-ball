@@ -1,0 +1,25 @@
+name: build/magic-eight-ball
+
+on:
+  pull_request:
+  push:
+    branches:
+      - main
+
+jobs:
+  build:
+    name: project-build
+    runs-on: ubuntu-latest
+    steps:
+      - name: checkout-repo-code
+        uses: actions/checkout@v4
+
+      - name: get-npm-version
+        id: package-version
+        uses: martinbeentjes/npm-get-version-action@master
+
+      - name: install-project-dependencies
+        run: npm ci
+
+      - name: build
+        run: npm run build
