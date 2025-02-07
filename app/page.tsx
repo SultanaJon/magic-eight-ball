@@ -33,7 +33,12 @@ export default function Home() {
     <div className={classNames(styles.center, styles.fullView)}>
       <div className={styles.content}>
         <div
-          className={classNames(styles.eightball, styles.circle, styles.center)}
+          className={classNames(
+            styles.eightball,
+            styles.circle,
+            styles.center,
+            isLoading ? styles.shake : "",
+          )}
         >
           <div className={classNames(styles.eightBallWindow, styles.circle)}>
             <span className={classNames(styles.answer, styles.center)}>
