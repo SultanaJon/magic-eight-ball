@@ -5,7 +5,7 @@ export const data = [
   "Ask again later",
   "Without a doubt",
   "Better not tell you now",
-  "Yes definitly",
+  "Yes definitely",
   "Cannot predict now",
   "You may rely on it",
   "Concentrate and ask again",
