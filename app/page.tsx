@@ -38,7 +38,7 @@ export default function Home() {
             styles.eightball,
             styles.circle,
             styles.center,
-            isLoading ? styles.shake : ""
+            isLoading ? styles.shake : "",
           )}
         >
           <div className={classNames(styles.eightBallWindow, styles.circle)}>
