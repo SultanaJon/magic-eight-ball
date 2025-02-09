@@ -5,6 +5,7 @@ import classNames from "classnames";
 import styles from "./styles.module.css";
 import { useState } from "react";
 import { data } from "./answers";
+import { Loader2 } from "lucide-react";
 
 export default function Home() {
   const [question, setQuestion] = useState<string>(``);
@@ -51,6 +52,7 @@ export default function Home() {
           placeholder="Ask the eight ball a question"
         />
         <Button onClick={onClickHandler} disabled={question == `` || isLoading}>
+          {isLoading && <Loader2 className="animate-spin" />}
           {isLoading ? "Asking eight ball..." : "Ask the eight ball"}
         </Button>
       </div>
